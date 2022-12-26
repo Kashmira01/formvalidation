@@ -1,0 +1,34 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+     <form name="form1" onsubmit="return Validation()">
+        Name: <input type="text" name="name" /><br><br>
+        Email: <input type="email" name="email" /><br><br>
+        <input type="submit" value="send">
+    </form>
+
+    <script>
+        function Validation() {
+            var i = document.forms["form1"]["name"].value;
+            if (i = " ") {
+               alert("Enter Name")
+               return false
+            }
+            var j = document.forms["form1"]["email"].value;
+            if (j = " ") {
+                alert("Enter Email")
+                return false
+            }
+        }
+    </script> 
+</body>
+
+</html>

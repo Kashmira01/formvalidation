@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    Value:<input type="text" id="number" name="number">
+    <input type="submit" value="send" onclick="formvalidate()">
+    <div id="demo"></div>
+    <script>
+        function formvalidate(){
+            var i=document.getElementById('number').value
+            if(isNaN(i)||i<1||i>10)
+            {
+                alert('Invalid Input')
+                return false
+            }
+            else
+            {
+                var text="Valid Input"
+            }
+            document.getElementById('demo').innerHTML=text;
+        }
+    </script>
+</body>
+</html>
