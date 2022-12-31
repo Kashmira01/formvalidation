@@ -17,16 +17,19 @@
 
     <script>
         function Validation() {
-            var i = document.forms["form1"]["name"].value;
-            if (i = " ") {
-               alert("Enter Name")
-               return false
+            
+            var name = document.forms['form1']['name'].value;
+            var email = document.forms['form1']['email'].value;
+            if(name == ""){
+
+                alert('Enter the name')
             }
-            var j = document.forms["form1"]["email"].value;
-            if (j = " ") {
-                alert("Enter Email")
-                return false
+
+            if(email == ''){
+
+                alert('Please enter the email')
             }
+           
         }
     </script> 
 </body>
